@@ -27,7 +27,7 @@ nom = "5.1.0"
 num = { version = "0.2", default-features = false }
 num-traits = "0.2"
 openssl = { version = "0.10" }
-ordered-float = "1.0"
+ordered-float = "1.1"
 protobuf = "2"
 quick-error = "1.2.2"
 rand = "0.6.5"
