@@ -490,7 +490,7 @@ dependencies = [
  "num-integer",
  "num-traits",
  "serde",
- "time",
+ "time 0.1.45",
 ]
 
 [[package]]
@@ -661,7 +661,7 @@ version = "0.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "888604f00b3db336d2af898ec3c1d5d0ddf5e6d462220f2ededc33a87ac4bbd5"
 dependencies = [
- "time",
+ "time 0.1.45",
  "url 1.7.2",
 ]
 
@@ -678,7 +678,7 @@ dependencies = [
  "publicsuffix",
  "serde",
  "serde_json",
- "time",
+ "time 0.1.45",
  "try_from",
  "url 1.7.2",
 ]
@@ -1014,7 +1014,7 @@ dependencies = [
  "tempfile",
  "tikv_alloc",
  "tikv_util",
- "time",
+ "time 0.1.45",
  "toml",
 ]
 
@@ -1042,7 +1042,7 @@ dependencies = [
  "tempfile",
  "tikv_alloc",
  "tikv_util",
- "time",
+ "time 0.1.45",
 ]
 
 [[package]]
@@ -1428,7 +1428,7 @@ checksum = "473a1265acc8ff1e808cd0a1af8cee3c2ee5200916058a2ca113c29f2d903571"
 dependencies = [
  "cfg-if",
  "libc",
- "wasi",
+ "wasi 0.7.0",
 ]
 
 [[package]]
@@ -1644,7 +1644,7 @@ dependencies = [
  "log",
  "net2",
  "rustc_version",
- "time",
+ "time 0.1.45",
  "tokio 0.1.22",
  "tokio-buf",
  "tokio-executor",
@@ -1859,9 +1859,9 @@ dependencies = [
 
 [[package]]
 name = "libc"
-version = "0.2.66"
+version = "0.2.140"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d515b1f41455adea1313a4a2ac8a8a477634fbae63cc6100e3aebb207ce61558"
+checksum = "99227334921fae1a979cf0bfdfcc6b3e5ce376ef57e16fb6fb3ea2ed6095f80c"
 
 [[package]]
 name = "libflate"
@@ -3287,7 +3287,7 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_urlencoded",
- "time",
+ "time 0.1.45",
  "tokio 0.1.22",
  "tokio-executor",
  "tokio-io",
@@ -3354,7 +3354,7 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_json",
- "time",
+ "time 0.1.45",
  "tokio 0.1.22",
  "tokio-timer",
  "xml-rs",
@@ -3426,7 +3426,7 @@ dependencies = [
  "rustc_version",
  "serde",
  "sha2",
- "time",
+ "time 0.1.45",
  "tokio 0.1.22",
 ]
 
@@ -4097,7 +4097,7 @@ dependencies = [
  "slog",
  "tikv_alloc",
  "tikv_util",
- "time",
+ "time 0.2.0",
 ]
 
 [[package]]
@@ -4238,7 +4238,7 @@ dependencies = [
  "tidb_query_codegen",
  "tidb_query_datatype",
  "tikv_util",
- "time",
+ "time 0.2.0",
  "tipb",
  "tipb_helper",
  "twoway",
@@ -4344,7 +4344,7 @@ dependencies = [
  "tidb_query",
  "tikv_alloc",
  "tikv_util",
- "time",
+ "time 0.2.0",
  "tipb",
  "tokio 0.2.9",
  "tokio-core",
@@ -4420,7 +4420,7 @@ dependencies = [
  "slog-term",
  "tempfile",
  "tikv_alloc",
- "time",
+ "time 0.2.0",
  "tokio-core",
  "tokio-executor",
  "tokio-sync",
@@ -4434,14 +4434,20 @@ dependencies = [
 
 [[package]]
 name = "time"
-version = "0.1.42"
+version = "0.1.45"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "db8dcfca086c1143c9270ac42a2bbd8a7ee477b78ac8e45b19abfb0cbede4b6f"
+checksum = "1b797afad3f312d1c66a56d11d0316f916356d11bd158fbc6ca6389ff6bf805a"
 dependencies = [
  "libc",
- "redox_syscall",
+ "wasi 0.10.0+wasi-snapshot-preview1",
  "winapi 0.3.8",
 ]
+
+[[package]]
+name = "time"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fcc26de0a81a07c8352b548977862908fa9863e0e6e4f0eb36b2a9f4f8845585"
 
 [[package]]
 name = "tinytemplate"
@@ -4972,6 +4978,12 @@ name = "wasi"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b89c3ce4ce14bdc6fb6beaf9ec7928ca331de5df7e5ea278375642a2f478570d"
+
+[[package]]
+name = "wasi"
+version = "0.10.0+wasi-snapshot-preview1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1a143597ca7c7793eff794def352d41792a93c481eb1042423ff7ff72ba2c31f"
 
 [[package]]
 name = "which"
